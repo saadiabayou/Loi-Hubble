@@ -52,8 +52,7 @@ r=[l0,[1000, 3000,5000], [2000,4000]]
 for i in range (len(r)):
     print(r[i])
     for j in range(len(r[i])):
-        vr=c*(r[i][j]-r[0][j])
-        
+        vr=c*(r[i][j]-r[0][j])       
         v_rad.append(vr)
         print("\nvrad =",v_rad)
      
