@@ -56,12 +56,12 @@ vrad=[]
 vr_moy=[]
 vrad_moy=[]
 
-l0=np.loadtxt("Données_expérimentales_l0.txt")
+l0=np.loadtxt("Données_laboratoire_l0.txt")
 #l0=[[2200,2350,2580],[2300,2250,2180],[3400,3370,3280],[2100,2250,2280],[2210,2155,2082],[3329,3272,3123],[2127,2450,2386],[2244,2153,2082],[3300,3271,3184]]
 
 print("\nl_laboratoires=",l0)
 #print("\ndim l0=",len(l0))
-l=np.loadtxt("Données_expérimentales_lobs.txt")
+l=np.loadtxt("Données_mesurées_lobs.txt")
 #l=[[2250,2370,2610],[2400,2310,2200],[4000,4100,4200],[2300,2551,2596],[2310,2370,2380],[3475,3389,3290],[2210,2565,2682],[2363,2254,2185],[3410,3375,3295]]
 #print("\ndim l=",len(l))
 print("\nl_observées=",l)
