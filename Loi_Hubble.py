@@ -117,22 +117,39 @@ plt.savefig("vitesse radiale galaxie en fonction de sa distance D")
 
 plt.show()
 
+
+
+# Fonction calcul variance
+def variance(l):
+    m=moyenne(l)
+    k=0
+    for i in range(len(l)):
+       k=k+((l[i]-m)**2) 
+       var=k/(len(l))
+       return var
+
+# Fonction calcul de l'écart type
+def ecart_typ(var):
+    ec_typ=np.sqrt (var) 
+    return ec_typ
+    
+
 # Calcul écart type
 
-vrad_th=[]
-for i in range(len(D)):
-    v_th=H0*D[i]
-#    print("\nv_th =",v_th)
-    vrad_th.append(round(v_th,2))
-
-print("\nvrad_théorique",vrad_th)
-
-ec_type=[]    
-for i in range(9):
-    et=((vrad_th[i]-vrad_moy[i])**2)/9
-    ec_type.append(round(et,2))
-
-print("\necart_type= ", ec_type)
+#vrad_th=[]
+#for i in range(len(D)):
+#    v_th=H0*D[i]
+##    print("\nv_th =",v_th)
+#    vrad_th.append(round(v_th,2))
+#
+#print("\nvrad_théorique",vrad_th)
+#
+#ec_type=[]    
+#for i in range(9):
+#    et=((vrad_th[i]-vrad_moy[i])**2)/9
+#    ec_type.append(round(et,2))
+#
+#print("\necart_type= ", ec_type)
 
 
 
@@ -140,10 +157,6 @@ print("\necart_type= ", ec_type)
 ## Tracé écart type
 #
 #plt.plot(ec_type,color="g")
-
-
-
-
 
 
 
